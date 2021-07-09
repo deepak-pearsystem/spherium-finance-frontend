@@ -51,7 +51,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
-                        <source src="./videos/sphrilogoann.mp4" type="video/mp4"/>
+                        <source src={`${process.env.PUBLIC_URL}/videos/sphrilogoann.mp4`} type="video/mp4"/>
                     </video>
                 </div>
             </div>

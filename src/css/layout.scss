@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    /*font-family: 'Raleway', sans-serif;*/
+}
+body{
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+background: rgba(0,123,255,0.3);
+}
+
+.custom-navigation{
+    background: transparent;
+    .navbar-brand{
+        img{
+            width: 185px;
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                a{
+                    font-size: 14px;
+                    color: #ffffff;
+                    padding: 0.5rem 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.banner-wrapper{
+    float: left;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #3545F2;
+    background-size: cover;
+    .contentover-wrapper{
+        position: relative;
+        float: left;
+        width: 100%;
+        .contentover{
+            position: absolute;
+            z-index: 9;
+            float: left;
+            width:100%;
+            height: 100vh;
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            .banner-info{
+                float: left;
+                width: 515px;
+                flex-direction: column
+                p{
+                    color: #FFFFFF;
+                    width: 100%;
+                    font-size: 30px;
+                    line-height: 46px;
+                    font-weight: 400;
+                    font-family: 'Raleway', sans-serif;
+                }
+                .bannerbtn-mask{
+                    float: left;
+                    width: 100%;
+                    .commfillbtn{
+                        min-width: 166px;
+                        height: 50px;
+                        margin-right: 15px;
+                        font-size: 14px;
+                        color: #1C1E23;
+                        background:#ffffff;
+                    }
+                    .commborbtn{
+                        min-width: 85px;
+                        height: 50px;
+                        font-size: 14px;
+                        color: #ffffff;
+                        &:hover{
+                            background:#ffffff;
+                            color: #1C1E23;
+                        }
+                    }
+                }
+            }
+         
+        }
+        .bannerbottom{
+            float: left;
+            width: 100%;
+           
+            .bottom-statics{
+                float: left;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .counter-value{
+                    float: left;
+                    width: auto;
+                    text-align: center;
+                    h2{
+                        font-size: 30px;
+                        line-height: 40px;
+                        font-weight: 500;
+                        color: #ffffff;
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .bannercontent-wrapper{
+            float: left;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            z-index: 9;
+            flex-direction: column;
+            .bannertoptext{
+                color: #FFFFFF;
+                width: 515px;
+                font-size: 30px;
+                line-height: 46px;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+            }
+            .bannerbtn-mask{
+                margin:3rem 0;
+                .commfillbtn{
+                    min-width: 166px;
+                    height: 50px;
+                    margin-right: 15px;
+                    font-size: 14px;
+                    color: #1C1E23;
+                    background:#ffffff;
+                }
+                .commborbtn{
+                    min-width: 85px;
+                    height: 50px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    &:hover{
+                        background:#ffffff;
+                        color: #1C1E23;
+                    }
+                }
+            }
+            .bannerbottom{
+                position: absolute;
+                bottom: 0;
+                .bottom-statics{
+                    .counter-value{
+                        float: left;
+                        width: auto;
+                        height: 100px;
+                        text-align: center;
+                        h2{
+                            font-size: 30px;
+                            line-height: 40px;
+                            font-weight: 500;
+                            color: #ffffff;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #ffffff;
+                        }
+                        &::after{
+                            content: '';
+                            height: 75px;
+                            width: 2px;
+                            background: #ffffff;
+                            float: right;
+                            position: relative;
+                            top: -96px;
+                            right: -60px;
+                        }
+                        &:last-child{
+                            &::after{
+                                content: '';
+                                height: 75px;
+                                width: 2px;
+                                background:transparent;
+                                float: right;
+                                position: relative;
+                                top: -96px;
+                                right: -60px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+#ocScreencapVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .name{
+      font-size: 22px;
+      color: #f00;
+      position: absolute;
+      z-index: -9;
+  }
+// .footer-wrapper {
+//     position: absolute;
+//     bottom: 0;
+// }

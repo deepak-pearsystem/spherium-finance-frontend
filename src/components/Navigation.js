@@ -9,8 +9,10 @@ const Navigation = () => {
         
             
             <Link className="navbar-brand" to="/">
-                <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="" classNameName="nonscroll-logo"/>
+                <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="" className="img-fluid nonscroll-logo"/>
+                <img src={`${process.env.PUBLIC_URL}/images/logo-scroll.svg`} alt="" className="img-fluid scroll-logo"/>
             </Link>
+
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

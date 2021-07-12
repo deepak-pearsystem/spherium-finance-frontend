@@ -4,6 +4,16 @@
 
 //document.getElementById('myVideo').play();
 
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+
 var autoPlayVideo = document.getElementById("ocScreencapVideo");
     autoPlayVideo.oncanplaythrough = function() {
         autoPlayVideo.muted = true;
@@ -11,6 +21,17 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
         autoPlayVideo.pause();
         autoPlayVideo.play();
 }
+
+// $(".navbar-nav .nav-item").on("click", function() {
+//   $(".nav-item").removeClass("active");
+//   $(this).addClass("active");
+// });
+
+
+  
+
+
+
 
 $(document).ready(function() {
     var owl = $('.latestblog-carousel');
@@ -28,4 +49,6 @@ $(document).ready(function() {
     $('.stop').on('click', function() {
       owl.trigger('stop.owl.autoplay')
     })
-})
+});
+
+

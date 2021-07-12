@@ -48,7 +48,7 @@ background: rgba(0,123,255,0.3);
 .banner-wrapper{
     float: left;
     width: 100%;
-    height: calc(100vh - 50px);
+    // height: calc(100vh - 50px);
     background: #3545F2;
     background-size: cover;
     .contentover-wrapper{
@@ -217,11 +217,13 @@ background: rgba(0,123,255,0.3);
     
 }
 #ocScreencapVideo {
-    position: fixed;
-    right: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
+    // position: fixed;
+    // right: 0;
+    // top: 0;
+    // min-width: 100%;
+    // min-height: 100%;
+    float: left;
+    width: 100%;
   }
 
   .name{
@@ -230,6 +232,73 @@ background: rgba(0,123,255,0.3);
       position: absolute;
       z-index: -9;
   }
+
+.spheriumforyou-wrapper{
+    float: left;
+    width: 100%;
+    padding: 4rem 0;
+    .card{
+        border: 1px solid #EAEDF2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 3rem 1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        img{
+            width: 100px;
+        }
+        .card-body{
+            text-align: center;
+            padding: 0px;
+            h5{
+                font-size: 19px;
+                color: #000B89;
+                line-height: 25px;
+                font-weight: normal;
+                padding: 0px 25px;
+                margin: 2rem 0 1.5rem 0;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 200;
+                color: #2E3147;
+            }
+        }
+    }
+}
+
+.commonpagetitle{
+    float: left;
+    width: 100%;
+    text-align: center;
+    h2{
+        margin: 2rem 0;
+        font-size: 30px;
+        font-weight: normal;
+        color: #181A2B;
+        font-family: 'Raleway', sans-serif;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 200;
+        color: #2E3147;
+        line-height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 // .footer-wrapper {
 //     position: absolute;
 //     bottom: 0;

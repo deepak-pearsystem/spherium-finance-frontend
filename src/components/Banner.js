@@ -5,24 +5,6 @@ const Banner = () => {
         <section className="banner-wrapper">
             <div className="container">
                 <div className="contentover-wrapper">
-                    {/* <div className="contentover">
-                        <div className="banner-info">
-                            <p>Mobile-first, cross-chain wallet which optimizes return on crypto assets while minimising risks.</p>
-                            <div className="bannerbtn-mask">
-                                <button type="button" class="btn btn-light commfillbtn">Documentation</button>
-                                <button type="button" class="btn btn-outline-light commborbtn">FAQ's</button>
-                            </div>
-                        </div>
-                    
-                        <div className="bannerbottom">
-                            <div className="bottom-statics">
-                                <div className="counter-value">
-                                    <h2>$293B+</h2>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="bannercontent-wrapper">
                         <div className="bannertoptext">Mobile-first, cross-chain wallet which optimizes return on crypto assets while minimising risks.</div>
                         <div className="bannerbtn-mask">
@@ -50,11 +32,11 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
-                        <source src={`${process.env.PUBLIC_URL}/videos/sphrilogoann.mp4`} type="video/mp4"/>
-                    </video>
                 </div>
             </div>
+            <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
+                <source src={`${process.env.PUBLIC_URL}/videos/sphrilogoann.mp4`} type="video/mp4"/>
+            </video>
         </section>
     );
 };

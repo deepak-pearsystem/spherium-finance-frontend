@@ -20,7 +20,7 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/about">Hyperswap</Link>
+                        <Link className="nav-link" to="/bannersvg">Hyperswap</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/about">Spherecomp</Link>

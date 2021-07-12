@@ -1,6 +1,7 @@
 import { Route, Switch, HashRouter as Router } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
+import Bannertwo from './components/Bannertwo';
 import Footer from './components/Footer';
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home/>
+            </Route>
+            <Route exact path="/bannersvg">
+              <Bannertwo/>
             </Route>
           </Switch>
           <Footer/>

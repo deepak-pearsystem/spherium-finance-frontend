@@ -24,7 +24,17 @@ body{
 ::selection{
 background: rgba(0,123,255,0.3);
 }
-
+.btn-link{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: unset;
+        box-shadow: unset;
+        text-decoration: none;
+    }
+}
 .custom-navigation{
     background: transparent;
     .navbar-brand{
@@ -337,10 +347,364 @@ background: rgba(0,123,255,0.3);
 
 
 
-
+.bannersvg-wrapper{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: url('../img/banner-image.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .bannerinfoleft{
+        float: left;
+        width: 100%;
+        height: calc(100vh - 115px);
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 30px;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 46px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .banneractonbtn{
+            float: left;
+            width: 100%;
+            margin: 1.5rem 0;
+            .commfillbtn{
+                min-width: 166px;
+                height: 50px;
+                margin-right: 15px;
+                font-size: 14px;
+                color: #1C1E23;
+                background:#ffffff;
+            }
+            .commborbtn{
+                min-width: 85px;
+                height: 50px;
+                font-size: 14px;
+                color: #ffffff;
+                &:hover{
+                    background:#ffffff;
+                    color: #1C1E23;
+                }
+            }
+        }
+        
+    }
+    .bannerimgright{
+        float: left;
+        width: 100%;
+        top: -440px;
+        left: -195px;
+        position: absolute;
+    }
+    .bannerbottom{
+        float: left;
+        width: 100%;
+       
+        .bottom-statics{
+            float: left;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .counter-value{
+                float: left;
+                width: auto;
+                text-align: center;
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    color: #ffffff;
+                }
+                p{
+                    font-size: 16px;
+                    color: #ffffff;
+                }
+                &::after{
+                    content: '';
+                    height: 75px;
+                    width: 2px;
+                    background: #ffffff;
+                    float: right;
+                    position: relative;
+                    top: -96px;
+                    right: -60px;
+                }
+                &:last-child{
+                    &::after{
+                        content: '';
+                        height: 75px;
+                        width: 2px;
+                        background:transparent;
+                        float: right;
+                        position: relative;
+                        top: -96px;
+                        right: -60px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
 
 // .footer-wrapper {
 //     position: absolute;
 //     bottom: 0;
 // }
+
+  .path {
+   
+    offset-path: path('M419.156 721.714L557.737 961.744C563.927 972.467 572.83 981.373 583.551 987.567C594.272 993.761 606.435 997.025 618.816 997.031L895.968 997.036C908.354 997.032 920.521 993.77 931.248 987.577C941.975 981.384 950.883 972.478 957.079 961.754L1095.66 721.728C1101.84 711.002 1105.09 698.838 1105.09 686.456C1105.08 674.075 1101.82 661.913 1095.63 651.191L957.049 411.163C950.858 400.439 941.956 391.533 931.234 385.339C920.513 379.145 908.351 375.881 895.969 375.875L618.817 375.87C606.431 375.874 594.264 379.136 583.537 385.329C572.811 391.522 563.902 400.428 557.706 411.153L419.13 651.179C412.946 661.905 409.693 674.069 409.697 686.45C409.702 698.831 412.964 710.993 419.156 721.714V721.714Z');
+    animation: sweep 6s linear infinite;
+  }
+
+  
+  @keyframes sweep {
+    0% {
+      motion-offset: 0;
+      offset-distance: 0;
+    }
+  
+    to {
+      motion-offset: 100%;
+      offset-distance: 100%;
+    }
+  }
+  
+//   @keyframes reverse {
+//     0% {
+//       motion-offset: 0;
+//       offset-distance: 0;
+//     }
+  
+//     to {
+//       motion-offset: -100%;
+//       offset-distance: -100%;
+//     }
+//   }
+  
+  
+  
+
+.oneplateform-wrapper{
+    float: left;
+    width: 100%;
+    padding: 3rem 1rem;
+    .accordion-wrapper{
+        float: left;
+        width: 100%;
+        margin-top: 2rem;
+        #accordionExample{
+            .card{
+                float: left;
+                width: 100%;
+                // border-radius: 16px;
+                .card-body{
+                    padding: 2rem;
+                    .accordion-info-left{
+                        float: left;
+                        width: 62%;
+                        h2{
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: #ffffff;
+                            font-family: 'Raleway', sans-serif;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 200;
+                            color: #D8DBFF;
+                            margin-top: 1.5rem;
+                        }
+                        ul{
+                            float: left;
+                            width: 100%;
+                            padding: 0px;
+                            margin: 0px;
+                            list-style: none;
+                            margin-top: 1rem;
+                            li{
+                                float: left;
+                                width: 100%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #87F2E7;
+                            }
+                        }
+                    }
+                    
+                }
+                .accordion-image-right{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                // #headingOne{
+                    
+                // }
+            }
+            .custom-accordion-one{
+                background:#00064B;
+                border: medium none;
+                // &::after{
+                //     content: '';
+                //     float: left;
+                //     width: 100%;
+                //     height: 40px;
+                //     background:lightcoral;
+                // }
+                border-radius: 16px 16px 16px 16px;
+            }
+            .custom-accordion-two{
+                background:#1A25A7;
+                border: medium none;
+                border-radius: 16px 16px 16px 16px;
+            }
+            .custom-accordion-three{
+                background:#3544E9;
+                border: medium none;
+                border-radius: 16px 16px 16px 16px;
+            }
+            .card-header{
+                float: left;
+                    width: 100%;
+                border-radius: 0px 0px 16px 16px;
+                // background:#f00;
+                h2{
+                    button{
+                        font-size: 30px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+.backgroundcotwo{
+    float: left;
+    width: 100%;
+    padding-top: 0.8rem;
+    margin-top: -12px;
+    background: #1A25A7;
+    border-radius: 0px 0px 16px 16px;
+}
+.backgroundcothree{
+    float: left;
+    width: 100%;
+    padding-top: 0.8rem;
+    margin-top: -12px;
+    background: #3544E9;
+    border-radius: 0px 0px 16px 16px;
+}
+
+
+.supportedwall-wrapper{
+    float: left;
+    width: 100%;
+    padding: 2rem 0;
+    .tabcontainer{
+        #pills-tab{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            .nav-link{
+                font-size: 14px;
+                font-weight: 500;
+                border-bottom: 2px solid transparent;
+                color: #181A2B;
+                font-family: 'Raleway', sans-serif;
+            }
+            .nav-link.active{
+                color: #1A25A7;
+                border-bottom: 2px solid #1A25A7;
+                background: transparent;
+                border-radius: 0px;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+            }
+        }
+        #pills-tabContent{
+            margin-top: 4rem;
+            .tabinnerinfo-mask{
+                float: left;
+                width: 100%;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                .supportiles{
+                    width: 18%;
+                    background: #ffffff;
+                    border: 1px solid #EAEDF2;
+                    height: 150px;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+.wordclassinvestor-wrapper{
+    float: left;
+    width: 100%;
+    padding: 4rem 0;
+    .wordinvestcell{
+        float: left;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:#fff;
+        padding: 1.5rem;
+        border:1px solid transparent;
+        transition: all 0.5s ease;
+        &:hover{
+            cursor: pointer;
+            background: #E9E9E9;
+            border:1px solid #E9E9E9;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.auditedverified-wrapper{
+    float: left;
+    width: 100%;
+    background: url('../img/bluebackground.jpg');
+    padding: 2rem 0; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .commonpagetitle{
+        h2{
+            color: #ffffff;
+        }
+    }
+    .auditedverified-cell{
+        float: left;
+        width: 100%;
+        background:#041153;
+        height: 182px;
+        display:flex;
+        margin: 1rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+}

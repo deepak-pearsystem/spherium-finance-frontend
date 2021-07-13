@@ -8,8 +8,8 @@ const Banner = () => {
                     <div className="bannercontent-wrapper">
                         <div className="bannertoptext">Mobile-first, cross-chain wallet which optimizes return on crypto assets while minimising risks.</div>
                         <div className="bannerbtn-mask">
-                            <button type="button" class="btn btn-light commfillbtn">Documentation</button>
-                            <button type="button" class="btn btn-outline-light commborbtn">FAQ's</button>
+                            <button type="button" className="btn btn-light commfillbtn">Documentation</button>
+                            <button type="button" className="btn btn-outline-light commborbtn">FAQ's</button>
                         </div>
                         <div className="bannerbottom">
                             <div className="bottom-statics">
@@ -34,9 +34,15 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
+            <div class="video-container">
+                <video id="ocScreencapVideo" autoPlay="autoPlay" muted="muted" loop="loop" playsInline="playsInline" preload="metadata" data-aos="fade-up">
+                    <source src={`${process.env.PUBLIC_URL}/videos/sphrilogoann.mp4`} type="video/mp4"/>
+                </video>
+            </div>
+            
+            {/* <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
                 <source src={`${process.env.PUBLIC_URL}/videos/sphrilogoann.mp4`} type="video/mp4"/>
-            </video>
+            </video> */}
         </section>
     );
 };

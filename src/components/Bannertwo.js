@@ -9,14 +9,14 @@ const Bannertwo = () => {
                         <div className="bannerinfoleft">
                             <h2>Mobile-first, cross-chain wallet which optimizes return on crypto assets while minimising risks.</h2>
                             <div className="banneractonbtn">
-                                <button type="button" class="btn btn-light commfillbtn">Documentation</button>
-                                <button type="button" class="btn btn-outline-light commborbtn">FAQ's</button>
+                                <button type="button" className="btn btn-light commfillbtn">Documentation</button>
+                                <button type="button" className="btn btn-outline-light commborbtn">FAQ's</button>
                             </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6">
                         <div className="bannerimgright">
-                        <div class="logoani-wrapper">
+                        <div className="logoani-wrapper">
         <svg width="1290" height="1180" viewBox="0 0 1290 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group 15944">
             <g id="Group 15943">
@@ -371,7 +371,7 @@ const Bannertwo = () => {
             </g>
             <g id="movelement">
             <path id="movepath" opacity="0.7" d="M419.156 721.714L557.737 961.744C563.927 972.467 572.83 981.373 583.551 987.567C594.272 993.761 606.435 997.025 618.816 997.031L895.968 997.036C908.354 997.032 920.521 993.77 931.248 987.577C941.975 981.384 950.883 972.478 957.079 961.754L1095.66 721.728C1101.84 711.002 1105.09 698.838 1105.09 686.456C1105.08 674.075 1101.82 661.913 1095.63 651.191L957.049 411.163C950.858 400.439 941.956 391.533 931.234 385.339C920.513 379.145 908.351 375.881 895.969 375.875L618.817 375.87C606.431 375.874 594.264 379.136 583.537 385.329C572.811 391.522 563.902 400.428 557.706 411.153L419.13 651.179C412.946 661.905 409.693 674.069 409.697 686.45C409.702 698.831 412.964 710.993 419.156 721.714V721.714Z" stroke="#00B9FF" stroke-width="3"/>
-            <path stroke="#070142" class="path" d="M 15, 0
+            <path stroke="#070142" className="path" d="M 15, 0
             m -10, 5
             a 20,5 0 1,0 -2,0" fill-opacity="null" stroke-opacity="null" stroke-width="1" fill="#ffffff" />
 

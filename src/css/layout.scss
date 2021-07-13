@@ -58,8 +58,9 @@ background: rgba(0,123,255,0.3);
 .banner-wrapper{
     float: left;
     width: 100%;
+    height: 100vh;
     // height: calc(100vh - 50px);
-    background: #3545F2;
+    background: #000;
     background-size: cover;
     .contentover-wrapper{
         position: relative;
@@ -226,15 +227,30 @@ background: rgba(0,123,255,0.3);
     }
     
 }
-#ocScreencapVideo {
-    // position: fixed;
-    // right: 0;
-    // top: 0;
-    // min-width: 100%;
-    // min-height: 100%;
-    float: left;
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    video  {
+        /* Make video to at least 100% wide and tall */
+        min-width: 100%; 
+        min-height: 100%; 
+
+        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+        width: auto;
+        height: auto;
+
+        /* Center the video */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
   }
+
 
   .name{
       font-size: 22px;
@@ -688,7 +704,7 @@ background: rgba(0,123,255,0.3);
     float: left;
     width: 100%;
     background: url('../img/bluebackground.jpg');
-    padding: 2rem 0; 
+    padding: 2rem 0 4rem 0; 
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -706,5 +722,183 @@ background: rgba(0,123,255,0.3);
         margin: 1rem 0;
         align-items: center;
         justify-content: center;
+        position: relative;
+        background-position: top center;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+          }
+          &:hover:after{
+            background:#ffffff;
+            transition: all .3s ease;
+            cursor: pointer;
+            width: 120%;
+            background-color: rgba(255, 255, 255, 0);
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.spheriuminews-wrapper{
+    float: left;
+    width: 100%;
+    padding: 4rem 0;
+    .carouselinews-mask{
+        float: left;
+        width: 100%;
+        .innews-carousel{
+            .owl-stage-outer{
+                float: left;
+                width: 100%;
+                margin: 1rem 0 3rem 0;
+                .item{
+                    float: left;
+                    width: 100%;
+                    padding: 1.5rem;
+                    background: #ffffff;
+                    border: 1px solid #EAEDF2;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    .image-wrapper{
+                        float: left;
+                        width: 100%;
+                        height: 75px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        img{
+                            width: 130px;
+                        }
+                    }
+                    p{
+                        float: left;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: normal;
+                        height: 90px;
+                        overflow: hidden;
+                        color: #181A2B;
+                        margin: 1.5rem 0;
+                    }
+                    a{
+                        float: left;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: #000B89;
+                        img{
+                            float: right;
+                            width: 15px;
+                            margin: 4px 0 0 5px;
+                        }
+                    }
+                }
+            }
+   
+            .owl-dots .owl-dot span {
+                width: 12px;
+                height: 12px;
+                margin: 5px 3px;
+                background: #E7E9F3;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity .2s ease;
+                border-radius: 30px;
+            }
+            .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+                background: #3643DC;
+            }
+        }
+    }
+}
+
+.footer-wrapper{
+    float: left;
+    width: 100%;
+    background: #F5F6FB;
+    padding: 3rem 0 0 0;
+    .logofooterinfo{
+        float: left;
+        width: 100%;
+        img{
+            width: 160px; 
+        }
+        p{
+            float: left;
+            width: 100%;
+            margin-top: 1.5rem;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 200;
+            color: #2E3147;
+        }
+    }
+    .footersociallist {
+        float: left;
+        width: 100%;
+        margin-top: 1.4rem;
+        a{
+            i {
+                color: #A0A6BC;
+                margin: 4px 8px 4px 0px;
+                font-size: 16px;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: #229DDB;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+    .footermenulist{
+        float: left;
+        width: 100%;
+        padding-left: 4rem;
+        h2{
+            font-size: 16px;
+            font-weight: 500;
+            color: #3E3E3E;
+        }
+        ul{
+            float: left;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            li{
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #727991;  
+                    margin-top: 0.7rem;
+                }
+            }   
+        }
+        
+    }
+    .footercopyright-mask{
+        float: left;
+        width: 100%;
+        border-top: 1px solid #E5E7EB;
+        margin-top: 5rem;
+        .copyrightext{
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: normal;
+            color: #727991;
+            padding: 1.1rem 0;
+        }
     }
 }

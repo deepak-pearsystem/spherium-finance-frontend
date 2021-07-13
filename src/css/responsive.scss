@@ -3,10 +3,189 @@
 @media (min-width: 1441px) and (max-width: 1600px) {}
 @media (min-width: 1367px) and (max-width: 1440px) {}
 @media (min-width: 1281px) and (max-width: 1366px) {}
-@media (min-width: 1024px) and (max-width: 1280px) {}
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .supportedwall-wrapper .tabcontainer #pills-tabContent .tabinnerinfo-mask .supportiles{
+        padding:1.1rem;
+    }
+    .auditedverified-wrapper .auditedverified-cell{
+        height: 140px;
+        padding:0 2rem
+    }
+    .footer-wrapper .footermenulist{
+        padding-left: 0px;
+    }
+    .footersociallist{
+        .navbar-brand{
+            margin-right: 0.5rem;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannertoptext{
+        width: 375px;
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannerbtn-mask {
+        margin: 2rem 0;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannerbottom .bottom-statics .counter-value{
+        height: 80px;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannerbottom .bottom-statics .counter-value h2{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannerbottom .bottom-statics .counter-value p{
+        font-size: 13px;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannerbottom .bottom-statics .counter-value::after{
+        content: '';
+        height: 60px;
+        width: 2px;
+        background: #ffffff;
+        float: right;
+        position: relative;
+        top: -75px;
+        right: -30px;
+    }
+    .footer-wrapper .footermenulist{
+        padding-left: 0px;
+    }
+    .footer-wrapper .footermenulist h2{
+        font-size: 13px;
+    }
+    .footer-wrapper .footermenulist ul li a{
+        font-size: 12px;
+    }
+    .footer-wrapper .logofooterinfo p{
+        font-size: 13px;
+    }
+    .footersociallist{
+        .navbar-brand{
+            margin-right: 3px;
+        }
+    }
+    .footer-wrapper .footercopyright-mask {
+        margin-top: 3rem;
+    }
+    .footer-wrapper .footersociallist{
+        margin-top: 0rem;
+    }
+    .auditedverified-wrapper .auditedverified-cell{
+        height: 130px;
+        padding: 1rem 1.5rem;
+    }
+    .wordclassinvestor-wrapper .wordinvestcell{
+        height: 80px;
+        padding: 0.5rem;
+    }
+    .wordclassinvestor-wrapper{
+        padding: 1rem 0 3rem;
+    }
+    .supportedwall-wrapper .tabcontainer #pills-tabContent .tabinnerinfo-mask .supportiles{
+        padding: 0px 1rem;
+    }
+    .spheriumforyou-wrapper .card .card-body h5{
+        font-size: 16px;
+        color: #000B89;
+        line-height: 23px;
+    }
+    .spheriumforyou-wrapper .card .card-body p{
+        font-size: 13px;
+        height: 95px;
+        overflow: hidden;
+    }
+    .navbar-light .navbar-toggler{
+        border-color:#3544E9;
+    }
+    .custom-navigation{
+        background: #1A25A7;
+    }
+    #navbarSupportedContent{
+        ul{
+            padding-top: 1rem;
+        }
+    }
+}
 /*mobile vertical layout*/
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .banner-wrapper .contentover-wrapper{
+        display: none;
+    }
+    .banner-wrapper .contentover-wrapper .bannercontent-wrapper .bannertoptext{
+        width: 100%;
+    }
+    .spheriumforyou-wrapper{
+        padding: 1rem 0;
+    }
+    .commonpagetitle h2 {
+        margin: 1rem 0;
+        font-size: 20px;
+    }
+    .oneplateform-wrapper{
+        padding: 1rem;
+        p{
+            font-size: 14px;    
+            line-height: 22px;
+        }
+    }
+    .oneplateform-wrapper .accordion-wrapper #accordionExample .card .card-body .accordion-info-left{
+        width: 100%;
+    }
+    .accordion-image-right{
+        padding-top: 2.5rem;
+        img{
+            width: 125px;
+        }
+    } 
+    .supportedwall-wrapper .tabcontainer #pills-tabContent .tabinnerinfo-mask{
+        flex-direction: column;
+    }
+    .supportedwall-wrapper .tabcontainer #pills-tabContent .tabinnerinfo-mask .supportiles{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .auditedverified-wrapper .auditedverified-cell{
+        height: 120px;
+    }
+    .spheriuminews-wrapper{
+        padding: 1rem 0;
+    }
+    .spheriuminews-wrapper .carouselinews-mask .innews-carousel .owl-stage-outer{
+        margin: 1rem 0;
+    }
+    .footer-wrapper .footersociallist{
+        text-align: center;
+        margin: 0rem 0 1rem 0;
+    }
+    .footer-wrapper .footermenulist{
+        padding-left: 0px;
+        margin: 1rem 0;
+    }
+    .footer-wrapper .footercopyright-mask {
+        margin-top: 1rem;
+    }
+    #ocScreencapVideo {
+        margin-top: 70px;
+    }
+    // .navbar-light .navbar-toggler-icon{
+    //     background-image: url('../img/menu-white.png') no-repeat !important;
+    //     width: 23px;
+    //     height: 23px;
+    // }
+    .navbar-light .navbar-toggler{
+        border-color:#3544E9;
+    }
+    .custom-navigation{
+        background: #1A25A7;
+    }
+    #navbarSupportedContent{
+        ul{
+            padding-top: 1rem;
+        }
+    }
+}
 /*mobile horizontal layout*/
 @media (min-width: 480px) and (max-width: 767px) {}
 @media only screen and (max-width : 736px) {}

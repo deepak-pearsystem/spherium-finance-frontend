@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -12,29 +13,29 @@ const Home = () => {
                     </div>
                     <div className="row">
                         <div className="col-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src={`${process.env.PUBLIC_URL}/images/low-fee.svg`} alt="" classNameName="card-img-top"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Low Fees, Swift Transactions.</h5>
-                                    <p class="card-text">Spherium is being built on Layer 2 solutions hence reducing cost and increasing the speed of transaction execution. Hence, much better user experience.</p>
+                            <div className="card">
+                                <img src={`${process.env.PUBLIC_URL}/images/low-fee.svg`} alt="" className="card-img-top"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Low Fees, Swift Transactions.</h5>
+                                    <p className="card-text">Spherium is being built on Layer 2 solutions hence reducing cost and increasing the speed of transaction execution. Hence, much better user experience.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src={`${process.env.PUBLIC_URL}/images/assets-work.svg`} alt="" classNameName="card-img-top"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Make All Your Crypto Assets Work.</h5>
-                                    <p class="card-text">Spherium App Opens the World of DeFi to You. Stake, Lend, Borrow, Swap on multiple Chains.</p>
+                            <div className="card">
+                                <img src={`${process.env.PUBLIC_URL}/images/assets-work.svg`} alt="" className="card-img-top"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Make All Your Crypto Assets Work.</h5>
+                                    <p className="card-text">Spherium App Opens the World of DeFi to You. Stake, Lend, Borrow, Swap on multiple Chains.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src={`${process.env.PUBLIC_URL}/images/your-pockt.svg`} alt="" classNameName="card-img-top"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Lives In Your Pocket.</h5>
-                                    <p class="card-text">A single mobile wallet, to interact with multiple blockchains and multiple DeFi products. DeFi on the go.</p>
+                            <div className="card">
+                                <img src={`${process.env.PUBLIC_URL}/images/your-pockt.svg`} alt="" className="card-img-top"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Lives In Your Pocket.</h5>
+                                    <p className="card-text">A single mobile wallet, to interact with multiple blockchains and multiple DeFi products. DeFi on the go.</p>
                                 </div>
                             </div>
                         </div>
@@ -149,16 +150,16 @@ const Home = () => {
             <div className="supportedwall-wrapper">
                 <div className="container">
                     <div className="tabcontainer">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Supported Wallets</a>
+                        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Supported Wallets</a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Spherium Built On</a>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Spherium Built On</a>
                             </li>
                         </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div className="tab-content" id="pills-tabContent">
+                            <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div className="tabinnerinfo-mask">
                                     <div className="supportiles">
                                         <img src={`${process.env.PUBLIC_URL}/images/Wallet-logo.svg`} alt="" className="img-fluid"/>
@@ -177,7 +178,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div className="tabinnerinfo-mask">
                                     <div className="supportiles">
                                         <img src={`${process.env.PUBLIC_URL}/images/Metama-logo.svg`} alt="" className="img-fluid"/>
@@ -206,95 +207,95 @@ const Home = () => {
                         <h2>Backed by World Class Investors</h2>
                     </div>
                     <div className="row">
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/wc-logo-one.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/1-6.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/b396353dd11d34d160cef603db9bec36_244x139.42857142857.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Blockpact.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/DCI-brand-RGB-transparant@2x-1000x500.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Group 1512.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Group 1513.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Group 1514.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Group 1515.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Image 4.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Layer 2.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Layer 245 (1).svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
 
 
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/logos.4410a5e8.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/NoPath - Copy.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/NoPath.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/petrock.9913435.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Rarestone-Capital-Logo-Centred.svg`} alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-12 col-md-2 col-lg-2">
+                        <div className="col-6 col-md-2 col-lg-2">
                             <div className="wordinvestcell">
                                 <img src={`${process.env.PUBLIC_URL}/images/WOLFEDGE-Capital-web.svg`} alt="" className="img-fluid"/>
                             </div>
@@ -356,6 +357,125 @@ const Home = () => {
                         <div className="col-12 col-md-4 col-lg-4">
                             <div className="auditedverified-cell">
                                 <img src={`${process.env.PUBLIC_URL}/images/Group 1525.svg`} alt="" className="img-fluid"/> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="spheriuminews-wrapper">
+                <div className="container">
+                    <div className="commonpagetitle">
+                        <h2>Spherium in the news</h2>
+                    </div>
+                    <div className="carouselinews-mask">
+                        <div className="owl-carousel owl-theme innews-carousel">
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/news-btc.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>The Top IDO and Project Launches to Watch in May 2021</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/Yahoo_Money.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>An Oversubscribed Private Round Sees Spherium Finance Raise a Total of...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/busniess-inside.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Spherium Finance Raises $3.3 Million to Build Comprehensive DeFi...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/AW_ISDR_Company.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Changing the Face of DeFi: Spherium Finance Raises $3.3 Million in Seed and...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/news-btc.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>The Top IDO and Project Launches to Watch in May 2021</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/Yahoo_Money.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>An Oversubscribed Private Round Sees Spherium Finance Raise a Total of...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/busniess-inside.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Spherium Finance Raises $3.3 Million to Build Comprehensive DeFi...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/AW_ISDR_Company.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Changing the Face of DeFi: Spherium Finance Raises $3.3 Million in Seed and...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/news-btc.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>The Top IDO and Project Launches to Watch in May 2021</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/Yahoo_Money.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>An Oversubscribed Private Round Sees Spherium Finance Raise a Total of...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/busniess-inside.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Spherium Finance Raises $3.3 Million to Build Comprehensive DeFi...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="image-wrapper">
+                                    <img src={`${process.env.PUBLIC_URL}/images/AW_ISDR_Company.svg`} alt="" className="img-fluid"/>
+                                </div>
+                                <div className="newsblog-wrapper">
+                                    <p>Changing the Face of DeFi: Spherium Finance Raises $3.3 Million in Seed and...</p>
+                                    <Link className="navbar-brand" to="/">Read more<img src={`${process.env.PUBLIC_URL}/images/slider-arrow.svg`} alt="" className="img-fluid"/></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

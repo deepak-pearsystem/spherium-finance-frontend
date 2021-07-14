@@ -17,6 +17,9 @@ $( document ).ready(function() {
 $('.innews-carousel').owlCarousel({
   loop:true,
   margin:30,
+  autoplay:true,
+  autoplayTimeout:1800,
+  autoplayHoverPause:true,
   nav:false,
   responsive:{
       0:{

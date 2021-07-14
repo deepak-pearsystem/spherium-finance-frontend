@@ -1,7 +1,14 @@
 import React from 'react';
+import Inthenews from './Inthenews';
+import Partners from './Partners';
+import Investors from './Investors';
+import Supportedwallets from './Supportedwallets';
+import Oneplatform from './Oneplatform';
+import Whatspherium from './Whatspherium';
 
 const Bannertwo = () => {
     return (
+        <div>
         <section className="bannersvg-wrapper">
             <div className="container">
                 <div className="row">
@@ -1293,6 +1300,13 @@ const Bannertwo = () => {
                 </div>
             </div>
         </section>
+        <Whatspherium/>
+        <Oneplatform/>
+        <Supportedwallets/>
+        <Investors/>    
+        <Partners/>
+        <Inthenews/>
+        </div>
     );
 };
 

@@ -262,7 +262,7 @@ background: rgba(0,123,255,0.3);
 .spheriumforyou-wrapper{
     float: left;
     width: 100%;
-    padding: 4rem 0;
+    padding: 2rem 0;
     .card{
         border: 1px solid #EAEDF2;
         display: flex;
@@ -273,13 +273,23 @@ background: rgba(0,123,255,0.3);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
-        img{
-            width: 100px;
+        .cardimageicon{
+            float: left;
+            width: 100%;    
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100px;
+            }
         }
         .card-body{
             text-align: center;
             padding: 0px;
             h5{
+                float: left;
+                width: 100%;
                 font-size: 19px;
                 color: #000B89;
                 line-height: 25px;
@@ -288,6 +298,10 @@ background: rgba(0,123,255,0.3);
                 margin: 2rem 0 1.5rem 0;
             }
             p{
+                float: left;
+                width: 100%;
+                height: 65px;
+                overflow: hidden;
                 font-size: 14px;
                 font-weight: 200;
                 color: #2E3147;
@@ -479,7 +493,7 @@ background: rgba(0,123,255,0.3);
   .path {
    
     offset-path: path('M419.156 721.714L557.737 961.744C563.927 972.467 572.83 981.373 583.551 987.567C594.272 993.761 606.435 997.025 618.816 997.031L895.968 997.036C908.354 997.032 920.521 993.77 931.248 987.577C941.975 981.384 950.883 972.478 957.079 961.754L1095.66 721.728C1101.84 711.002 1105.09 698.838 1105.09 686.456C1105.08 674.075 1101.82 661.913 1095.63 651.191L957.049 411.163C950.858 400.439 941.956 391.533 931.234 385.339C920.513 379.145 908.351 375.881 895.969 375.875L618.817 375.87C606.431 375.874 594.264 379.136 583.537 385.329C572.811 391.522 563.902 400.428 557.706 411.153L419.13 651.179C412.946 661.905 409.693 674.069 409.697 686.45C409.702 698.831 412.964 710.993 419.156 721.714V721.714Z');
-    animation: sweep 6s linear infinite;
+    animation: sweep 4s linear infinite;
   }
 
   
@@ -688,7 +702,8 @@ background: rgba(0,123,255,0.3);
         align-items: center;
         justify-content: center;
         background:#fff;
-        padding: 1.5rem;
+        padding: 0.5rem;
+        margin: 1rem 0.5rem;
         border:1px solid transparent;
         transition: all 0.5s ease;
         &:hover{
@@ -848,13 +863,11 @@ background: rgba(0,123,255,0.3);
         width: 100%;
         margin-top: 1.4rem;
         a{
-            i {
-                color: #A0A6BC;
-                margin: 4px 8px 4px 0px;
-                font-size: 16px;
+            svg {
+                fill:#a0a6bc;
                 transition: all 0.5s ease;
                 &:hover{
-                    color: #229DDB;
+                    fill: #3643DC;
                     transition: all 0.5s ease;
                 }
             }

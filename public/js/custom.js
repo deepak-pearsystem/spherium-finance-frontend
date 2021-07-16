@@ -13,29 +13,55 @@ $(function () {
 });
 
 
-$( document ).ready(function() {
-$('.innews-carousel').owlCarousel({
-  loop:true,
-  margin:30,
-  autoplay:true,
-  autoplayTimeout:1800,
-  autoplayHoverPause:true,
-  nav:false,
-  responsive:{
-      0:{
-          items:1,
-          dots:false,
-          autoplay:true
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:4
-      }
-  }
-}) 
-});
+
+
+// $(document).ready(function() {
+// 	$('#fullpage').fullpage({
+// 		//options here
+//     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+// 		autoScrolling:true,
+// 		scrollHorizontally: true
+// 	});
+
+	//methods
+	//$.fn.fullpage.setAllowScrolling(false);
+//});
+
+
+
+
+
+
+
+
+const $slider = $("#slider");
+$slider
+	.on('init', () => {
+		mouseWheel($slider)
+	})
+	.slick({
+		dots: true,
+		vertical: true,
+		infinite: false,
+	})
+function mouseWheel($slider) {
+	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
+}
+function mouseWheelHandler(event) {
+	event.preventDefault()
+	const $slider = event.data.$slider
+	const delta = event.originalEvent.deltaY
+	if(delta > 0) {
+		$slider.slick('slickPrev')
+	}
+	else {
+		$slider.slick('slickNext')
+	}
+}
+
+
+
+
 
 var autoPlayVideo = document.getElementById("ocScreencapVideo");
     autoPlayVideo.oncanplaythrough = function() {
@@ -73,6 +99,3 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
 //     owl.trigger('stop.owl.autoplay')
 //   })
 // })
-
-
-
